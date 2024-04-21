@@ -4,7 +4,7 @@
 
     <div class="wrap">
       <v-row no-gutters align="center" justify="space-between">
-        <v-chip-group class="py-1">
+        <v-chip-group class="py-1" column>
           <v-chip
             outlined
             :color="chapter === 0 && !showMarked ? 'primary' : ''"
@@ -24,13 +24,13 @@
             :color="items.chapter === chapter ? 'primary' : ''"
             class="mr-2"
             @click="(chapter = items.chapter), (showMarked = false)"
-            ><strong>{{ items.chapter }} 장</strong></v-chip
-          >
+            >{{ items.chapter }}
+          </v-chip>
         </v-chip-group>
 
         <div>
           <span style="font-size: 0.8rem"
-            >총 <strong>{{ count }}</strong> 문제</span
+            >총 <strong>{{ count }}</strong> 개</span
           >
           <v-btn icon @click="refresh">
             <v-icon>mdi-refresh</v-icon>
@@ -52,14 +52,13 @@
           <strong>
             {{ items.chapter + ". " + items.title }}
           </strong>
-          <span style="font-size: 0.8rem"
-            >총
+          <span style="font-size: 0.8rem">
             <strong>{{
               showMarked
                 ? items.items.filter(e => e.mark).length
                 : items.items.length
             }}</strong>
-            문제</span
+            개</span
           >
         </v-row>
 
@@ -99,10 +98,19 @@
 
             <v-col cols="3" align="end" justify="center">
               <template v-if="item.show">
-                <strong style="font-size: 0.75rem">{{ item.answer }}</strong>
-                <v-btn :elevation="0" @click="toggleAnswer(item)" icon>
-                  <v-icon small color="red">mdi-close</v-icon>
-                </v-btn>
+                <v-row
+                  no-gutters
+                  align="center"
+                  justify="end"
+                  style="min-height: 36px">
+                  <strong style="font-size: 0.75rem">
+                    {{ item.answer }}
+                  </strong>
+
+                  <v-btn :elevation="0" @click="toggleAnswer(item)" icon small>
+                    <v-icon small color="red">mdi-close</v-icon>
+                  </v-btn>
+                </v-row>
               </template>
               <template v-else>
                 <v-btn :elevation="0" @click="toggleAnswer(item)">
@@ -181,11 +189,9 @@ export default {
 </script>
 
 <style lang="scss">
-* {
-  // border: 1px solid;
-}
 .content-container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 30px auto;
 
   .wrap {

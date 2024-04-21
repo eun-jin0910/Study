@@ -914,6 +914,18 @@ const data = [
         title: "응용 SW 기초 기술 활용",
         items: [
             {
+                question: "컴퓨터 시스템의 자원들을 효율적으로 관리하며, 사용자가 컴퓨터를 편리하고 효율적으로 사용할 수 있도록 환경을 제공하는 여러 프로그램의 모임",
+                answer: "운영체제(OS; Operating System)"
+            },
+            {
+                question: "1960년대 AT&T 벨(Bell) 연구소, MIT, General Electric이 공동 개발한 운영체제. 시분할 시스템을 위해 설계된 대화식 운영체제. 대부분 C 언어로 작성되어 있어 이식성이 높으며 장치, 프로세스 간의 호환성이 높다. 트리(Tree) 구조의 파일 시스템을 갖는다.",
+                answer: "UNIX"
+            },
+            {
+                question: "구글(Google) 사에서 개발한 리눅스 커널 기반의 개방형 모바일 운영체제. 자바와 코틀린으로 애플리케이션을 작성",
+                answer: "Android"
+            },
+            {
                 question: "가장 먼저 들어와서 가장 오래 있었던 페이지를 교체하는 기법(선입선출)",
                 answer: "FIFO(First in First Out)"
             },
@@ -1086,6 +1098,10 @@ const data = [
                 answer: "VLSM(Variable Length Subnet Masking)"
             },
             {
+                question: "한 개의 정식 IP 주소에 대량의 가상 사설 IP 주소를 할당 및 연결하는 기능",
+                answer: "NAT(Network Address Translation)"
+            },
+            {
                 question: "동일한 AS 내의 라우팅에 사용되는 프로토콜",
                 answer: "내부 라우팅 프로토콜(IGP; Interior Gateway Protocol)"
             },
@@ -1117,24 +1133,120 @@ const data = [
                 question: "하나의 대형 저장 장치 대신 다수의 저용량의 저장 장치를 배열로 구성하는 기술. 여러 개의 하드 디스크에 일부 중복된 데이터를 나눠서 저장하기 때문에 디스크 어레이라고도 한다.",
                 answer: "RAID(Redundant Array of Independent Disks)"
             },
+            {
+                question: "오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼. 더그 커팅과 마이크 캐퍼렐라가 개발했으며, 구글의 맵리듀스 엔진을 사용하고 있다. 일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성하고 그 안에 보관된 거대한 데이터 세트를 병렬로 처리할 수 있도록 개발된 자바 소프트웨어 프레임워크이다.",
+                answer: "하둡(Hadoop)"
+            },
+            {
+                question: "대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그래밍 모델이다. 흩어져 있는 데이터를 연관성 있는 데이터 분류로 묶는 Map 작업을 수행한 후 중복 데이터를 제거하고 원하는 데이터를 추출하는 Reduce 작업을 수행한다.",
+                answer: "맵리듀스(MapReduce)"
+            },
+            {
+                question: "대량의 데이터를 분석하여 데이터에 내재된 변수 사이의 상호관계를 규명하여 일정한 패턴을 찾아내는 기법",
+                answer: "데이터 마이닝(Data Mining)"
+            },
+            {
+                question: "오픈 소스 기반 분산 컴퓨팅 플랫폼인 아파치 하둡(Apache Hadoop) 기반의 분산 데이터 웨어하우스 프로젝트",
+                answer: "타조(Tajo)"
+            },
+            {
+                question: "다차원으로 이루어진 데이터로부터 통계적인 요약 정보를 분석하여 의사결정에 활용하는 방식. 연산 : Roll-up, Drill-down, Drill-through, Drillacross, Pivoting, Slicing, Dicing",
+                answer: "OLAP(Online Analytical Processing)"
+            },
+            {
+                question: "다양한 채널에서 소비자와 상호 작용을 통해 생성된 것으로, 기업 마케팅에 있어 효율적이고 다양한 데이터이며, 이전에 사용하지 않거나 알지 못했던 새로운 데이터나 기존 데이터에 새로운 가치가 더해진 데이터",
+                answer: "브로드 데이터(Broad Data)"
+            },
         ]
     },
     {
         chapter: 12,
         title: "제품 소프트웨어 패키징",
         items: [
-            // {
-            //     question: "",
-            //     answer: ""
-            // },
-            // {
-            //     question: "",
-            //     answer: ""
-            // },
-            // {
-            //     question: "",
-            //     answer: ""
-            // },
+            {
+                question: "소프트웨어 개발 과정에서 정리된 릴리즈 정보를 최종 사용자인 고객과 공유하기 위한 문서",
+                answer: "릴리즈 노트"
+            },
+            {
+                question: "저작권에 대한 사용 권한, 라이선스 발급, 암호화된 키 관리, 사용량에 따른 결제 관리 등을 수행하는 곳",
+                answer: "클리어링 하우스(Clearing House)"
+            },
+            {
+                question: "콘텐츠를 제공하는 저작권자",
+                answer: "콘텐츠 제공자(Contents Provider)"
+            },
+            {
+                question: "콘텐츠를 메타 데이터와 함께 배포 가능한 형태로 묶어 암호화하는 프로그램",
+                answer: "패키저(Packager)"
+            },
+            {
+                question: "암호화된 콘텐츠를 유통하는 곳이나 사람",
+                answer: "콘텐츠 분배자(Contents Distributor)"
+            },
+            {
+                question: "배포된 콘텐츠의 이용 권한을 통제하는 프로그램",
+                answer: "DRM 컨트롤러(DRM Controller)"
+            },
+            {
+                question: "콘텐츠 원본을 안전하게 유통하기 위한 전자적 보안 장치",
+                answer: "보안 컨테이너(Security Container)"
+            },
+            {
+                question: "콘텐츠 및 라이선스를 암호화하고 전자 서명을 할 수 있는 기술",
+                answer: "암호화(Encryption)"
+            },
+            {
+                question: "콘텐츠를 암호화한 키에 대한 저장 및 분배 기술",
+                answer: "키 관리(Key Management)"
+            },
+            {
+                question: "콘텐츠를 암호화된 콘텐츠로 생성하기 위한 기술",
+                answer: "암호화 파일 생성(Packager)"
+            },
+            {
+                question: "콘텐츠에 대한 식별 체계 표현 기술",
+                answer: "식별 기술(Identification)"
+            },
+            {
+                question: "라이선스의 내용 표현 기술",
+                answer: "저작권 표현(Right Expression)"
+            },
+            {
+                question: "라이선스 발급 및 사용에 대한 정책 표현 및 관리 기술",
+                answer: "정책 관리(Policy Management)"
+            },
+            {
+                question: "크랙에 의한 콘텐츠 사용 방지 기술",
+                answer: "크랙 방지(Tamper Resistance)"
+            },
+            {
+                question: "라이선스 발급 및 사용의 기준이 되는 사용자 인증 기술",
+                answer: "인증(Authentication)"
+            },
+            {
+                question: "개발 과정에서 소프트웨어의 변경 사항을 관리하기 위해 개발된 일련의 활동",
+                answer: "형상 관리(SCM; Software Configuration Management)"
+            },
+            {
+                question: "형상 관리 대상에 이름과 관리 번호를 부여하고, 계층(Tree) 구조로 구분하여 수정 및 추적이 용이하도록 하는 작업",
+                answer: "형상 식별"
+            },
+            {
+                question: "소프트웨어 업그레이드나 유지 보수 과정에서 생성된 다른 버전의 형상 항목을 관리하고, 이를 위해 특정 절차와 도구(Tool)를 결합시키는 작업",
+                answer: "버전 제어"
+            },
+            {
+                question: "식별된 형상 항목에 대한 변경 요구를 검토하여 현재의 기준선(Base Line)이 잘 반영될 수 있도록 조정하는 작업",
+                answer: "형상 통제"
+            },
+            {
+                question: "기준선의 무결성을 평가하기 위해 확인, 검증, 검열 과정을 통해 공식적으로 승인하는 작업",
+                answer: "형상 감사"
+            },
+            {
+                question: "형상의 식별, 통제, 감사 작업의 결과를 기록 및 관리하고 보고서를 작성하는 작업",
+                answer: "형상 기록"
+            },
         ]
     },
 ]
