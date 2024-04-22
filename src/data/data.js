@@ -922,8 +922,40 @@ const data = [
                 answer: "UNIX"
             },
             {
+                question: "UNIX의 가장 핵심적인 부분으로 하드웨어를 보호하고, 프로그램과 하드웨어 간의 인터페이스 역할을 담당. 프로세스(CPU 스케줄링) 관리, 기억장치 관리, 파일 관리, 입출력 관리, 프로세스간 통신, 데이터 전송 및 변환 등 여러가지 기능을 수행",
+                answer: "커널(Kernel)"
+            },
+            {
+                question: "사용자의 명령어를 인식하여 프로그램을 호출하고 명령을 수행하는 명령어 해석기. 시스템과 사용자 간의 인터페이스를 담당",
+                answer: "쉘(Shell)"
+            },
+            {
                 question: "구글(Google) 사에서 개발한 리눅스 커널 기반의 개방형 모바일 운영체제. 자바와 코틀린으로 애플리케이션을 작성",
                 answer: "Android"
+            },
+            {
+                question: "프로그램이나 데이터를 주기억장치의 어디에 위치시킬 것인지를 결정하는 전략",
+                answer: "배치(Placement) 전략"
+            },
+            {
+                question: "프로그램이나 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 첫 번째 분할 영역에 배치시키는 방법",
+                answer: "최초 적합(First Fit)"
+            },
+            {
+                question: "프로그램이나 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 작게 남기는 분할 영역에 배치시키는 방법",
+                answer: "최적 적합(Best Fit)"
+            },
+            {
+                question: "프로그램이나 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 많이 남기는 분할 영역에 배치시키는 방법",
+                answer: "최악 적합(Worst Fit)"
+            },
+            {
+                question: "가상기억장치에 보관되어 있는 프로그램과 주기억 장치의 영역을 동일한 크기로 나눈 후 나눠진 프로그램을 동일하게 나눠진 주기억장치의 영역에 적재시켜 실행하는 기법",
+                answer: "페이징(Paging) 기법"
+            },
+            {
+                question: "가상기억장치에 보관되어 있는 프로그램을 다양한 크기의 논리적인 단위로 나눈 후 주기억장치에 적재시켜 실행시키는 기법",
+                answer: "세그먼테이션(Segmentation) 기법"
             },
             {
                 question: "가장 먼저 들어와서 가장 오래 있었던 페이지를 교체하는 기법(선입선출)",
@@ -972,6 +1004,134 @@ const data = [
             {
                 question: "짧은 작업시간이면서 대기시간이 긴 프로세스부터 처리하는 비선점형 스케줄링",
                 answer: "HRN(Highest Response-ratio Next)"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 파일 내용을 화면에 표시",
+                answer: "cat"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 디렉터리의 위치를 변경",
+                answer: "cd"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 파일 소유자와 그룹을 변경",
+                answer: "chown"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 파일을 복사",
+                answer: "cp"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 파일을 삭제",
+                answer: "rm"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 파일을 찾음",
+                answer: "find"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 PID(프로세스 고유 번호)를 이용하여 프로세스를 종료",
+                answer: "kill"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 새로운 프로세스를 생성",
+                answer: "fork"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 현재 디렉터리의 파일 목록을 표시",
+                answer: "ls"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 디렉터리를 생성",
+                answer: "mkdir"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 디렉터리를 삭제",
+                answer: "rmdir"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 파일을 이동",
+                answer: "mv"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 현재 실행중인 프로세스를 표시",
+                answer: "ps"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 현재 작업중인 디렉터리 경로를 화면에 표시",
+                answer: "pwd"
+            },
+            {
+                question: "UNIX/LINUX 기본 명령어 중 현재 시스템에 접속해 있는 사용자를 표시",
+                answer: "who"
+            },
+            {
+                question: "파일의 보호 모드를 설정하여 파일의 사용 허가를 지정하는 UNIX 명령어",
+                answer: "chmod"
+            },
+            {
+                question: "인터넷에 연결된 모든 컴퓨터 자원을 구분하기 위한 고유한 주소",
+                answer: "IP(Internet Protocol Address)"
+            },
+            {
+                question: "8비트씩 4부분, 총 32비트로 구성. 네트워크 부분의 길이에 따라 A 클래스에서 E 클래스까지 총 5단계로 구성",
+                answer: "IPv4(Internet Protocol version 4)"
+            },
+            {
+                question: "현재 사용하고 있는 IP 주소 체계인 IPv4의 주소 부족 문제를 해결하기 위해 개발. 16비트씩 8부분, 총 128비트로 구성. 각 부분을 16진수로 표현. 인증성, 기밀성, 데이터 무결성의 지원으로 보안 문제 해결",
+                answer: "IPv6(Internet Protocol version 6)"
+            },
+            {
+                question: "전송에 필요한 두 장치 간의 실제 접속과 절단 등 기계적, 전기적, 기능적, 절차적 특성에 대한 규칙을 정의",
+                answer: "물리 계층(Physical Layer)"
+            },
+            {
+                question: "두 개의 인접한 개방 시스템들 간에 신뢰성 있고 효율적인 정보 전송을 할 수 있도록 시스템 간 연결 설정과 유지 및 종료를 담당",
+                answer: "데이터 링크 계층(Data Link Layer)"
+            },
+            {
+                question: "개방 시스템들 간의 네트워크 연결을 관리하는 기능과 데이터의 교환 및 중계 기능",
+                answer: "네트워크 계층(Network Layer)"
+            },
+            {
+                question: "논리적 안정과 균일한 데이터 전송 서비스를 제공함으로써 종단 시스템(End-to-End) 간에 투명한 데이터 전송을 가능하게 한다.",
+                answer: "전송 계층(Transport Layer)"
+            },
+            {
+                question: "송수신 측 간의 관련성을 유지하고 대화 제어를 담당",
+                answer: "세션 계층(Session Layer)"
+            },
+            {
+                question: "서로 다른 데이터 표현 형태를 갖는 시스템 간의 상호 접속을 위해 필요한 계층으로, 코드 변환, 데이터 암호화, 데이터 압축, 구문 검색 등의 기능 수행",
+                answer: "표현 계층(Presentation Layer)"
+            },
+            {
+                question: "사용자(응용 프로그램)가 OSI 환경에 접근할 수 있도록 서비스를 제공",
+                answer: "응용 계층(Application Layer)"
+            },
+            {
+                question: "브리지와 같이 LAN과 LAN의 연결 기능에 데이터 전송의 최적 경로를 선택하는 기능이 추가된 장치이다. 서로 다른 LAN 또는 LAN과 WAN을 연결하는 기능",
+                answer: "라우터(Router)"
+            },
+            {
+                question: "거리가 증가할수록 감쇠하는 디지털 신호의 장거리 전송을 위해 수신한 신호를 재생시키거나 출력 전압을 높여 전송하는 장치",
+                answer: "리피터(Repeater)"
+            },
+            {
+                question: "한 사무실이나 가까운 거리의 컴퓨터들을 연결하는 장치로, 각각의 회선을 통합하여 관리. 신호 증폭 기능을 하는 리피터의 역할을 포함",
+                answer: "허브(Hub)"
+            },
+            {
+                question: "LAN과 LAN을 연결하거나 LAN 안에서의 컴퓨터 그룹을 연결하는 장치. 브리지를 이용한 서브넷(Subnet) 구성 시 전송 가능한 회선 수는 브리지가 n개 일 때, n(n-1)/2개이다.",
+                answer: "브리지(Bridge)"
+            },
+            {
+                question: "OSI 전 계층의 프로토콜 구조가 다른 네트워크를 연결하는 장치. LAN에서 다른 네트워크에 데이터를 보내거나 다른 네트워크로부터 데이터를 받아들이는 출입구 역할",
+                answer: "게이트웨이(Gateway)"
+            },
+            {
+                question: "프로토콜의 기본요소 3가지",
+                answer: "구문(Syntax), 의미(Semantics), 시간(Timing)"
             },
             {
                 question: "OSI 7계층 중 응용 계층 설명",
@@ -1054,6 +1214,26 @@ const data = [
                 answer: "HDLC(High-level Data Link Control)"
             },
             {
+                question: "서로 다른 기종의 컴퓨터들이 데이터를 주고받을 수 있도록 하는 표준 프로토콜",
+                answer: "TCP/IP(Transmission Control Protocol/Internet Protocol)"
+            },
+            {
+                question: "가상 회선 방식을 기반으로 하는 양방향 연결 서비스를 제공. 패킷의 다중화, 순서 제어, 오류 제어, 흐름 제어 기능 제공",
+                answer: "TCP"
+            },
+            {
+                question: "데이터그램 방식을 기반으로 하는 비연결형 서비스 제공. 패킷의 분해/조립, 주소 지정, 경로 선택 기능을 제공",
+                answer: "IP"
+            },
+            {
+                question: "PPTP와 L2F의 기술적 장점들을 결합하여 만들어진 터널링 프로토콜.데이터 링크 계층에서 구현되는 터널링 프로토콜. 자체적으로 암호화 및 인증 기능을 제공하지 않아 다른 보안 프로토콜과 함께 사용되는 경우가 많다.",
+                answer: "L2TP(Layer 2 Tunneling Protocol)"
+            },
+            {
+                question: "데이터 전송 전에 연결을 설정하지 않는 비연결형 서비스를 제공하는 프로토콜. 실시간 전송에 유리하며, 신뢰성보다는 속도가 중요시되는 네트워크에 사용",
+                answer: "UDP(User Datagram Protocol)"
+            },
+            {
                 question: "송수신 간의 패킷 단위로 데이터를 교환하는 네트워크에서 정보를 주고받는데 사용하는 통신 프로토콜",
                 answer: "IP(Internet Protocol)"
             },
@@ -1120,6 +1300,10 @@ const data = [
             {
                 question: "AS 상호 간에 경로 정보를 교환하는데 사용되는 외부 라우팅 프로토콜",
                 answer: "BGP(Border Gateway Protocol)"
+            },
+            {
+                question: "메시지를 일정한 길이의 패킷으로 잘라서 전송하는 방식으로, 가상 회선 방식과 데이터그램 방식이 있다.",
+                answer: "패킷 교환 방식(Packet Switching)"
             },
             {
                 question: "각 전송 패킷을 미리 정해진 경로없이 독립적으로 처리하여 교환하는 방식이다.특정 교환기의 고장 시 모든 패킷을 잃어버리는 가상회선과 달리, 그 경로를 피해서 전송할 수 있으므로 더욱 신뢰가 가능하다.",
