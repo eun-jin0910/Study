@@ -198,22 +198,22 @@ const data = [
         chapter: 2,
         title: "화면 설계",
         items: [
-            {
-                question: "명령어를 텍스트로 입력하여 조작하는 사용자 인터페이스",
-                answer: "CLI(Command Line Interface)"
-            },
-            {
-                question: "그래픽 환경을 기반으로 한 마우스나 전자펜을 이용하는 사용자 인터페이스",
-                answer: "GUI(Graphical User Interface)"
-            },
-            {
-                question: "키보드나 마우스 없이 신체 부위를 이용하는 사용자 인터페이스",
-                answer: "NUI(Natural User Interface)"
-            },
-            {
-                question: "현실에 존재하는 모든 사물이 입출력장치로 변화할 수 있는 사용자 인터페이스",
-                answer: "OUI(Oraganic User Interface)"
-            },
+            // {
+            //     question: "명령어를 텍스트로 입력하여 조작하는 사용자 인터페이스",
+            //     answer: "CLI(Command Line Interface)"
+            // },
+            // {
+            //     question: "그래픽 환경을 기반으로 한 마우스나 전자펜을 이용하는 사용자 인터페이스",
+            //     answer: "GUI(Graphical User Interface)"
+            // },
+            // {
+            //     question: "키보드나 마우스 없이 신체 부위를 이용하는 사용자 인터페이스",
+            //     answer: "NUI(Natural User Interface)"
+            // },
+            // {
+            //     question: "현실에 존재하는 모든 사물이 입출력장치로 변화할 수 있는 사용자 인터페이스",
+            //     answer: "OUI(Oraganic User Interface)"
+            // },
             {
                 question: "객체 지향 소프트웨어 개발 과정에서 산출물을 명세화, 시각화, 문서화할 때 사용되는 모델링 기술과 방법론을 통합해서 만든 표준화된 범용 모델링 언어로 사물, 관계, 다이어그램으로 구성된다.",
                 answer: "UML(Unified Modeling Language)"
@@ -415,18 +415,6 @@ const data = [
         chapter: 6,
         title: "프로그래밍 언어 활용",
         items: [
-            // {
-            //     question: "",
-            //     answer: ""
-            // },
-            // {
-            //     question: "",
-            //     answer: ""
-            // },
-            // {
-            //     question: "",
-            //     answer: ""
-            // },
         ]
     },
     {
@@ -469,34 +457,34 @@ const data = [
                 question: "물리적 저장 장치의 관점에서 보는 데이터베이스 구조",
                 answer: "내부 스키마"
             },
-            {
-                question: "데이터가 정렬된 순서로 생성되는 인덱스",
-                answer: "순서 인덱스"
-            },
-            {
-                question: "해시 함수에 의해 직접 데이터에 키 값으로 접근하는 인덱스",
-                answer: "해시 인덱스"
-            },
-            {
-                question: "각 컬럼에 적은 개수 값이 저장된 경우 선택하는 인덱스",
-                answer: "비트맵 인덱스"
-            },
-            {
-                question: "수식이나 함수를 적용하여 만든 인덱스",
-                answer: "함수기반 인덱스"
-            },
-            {
-                question: "하나의 컬럼으로만 구성한 인덱스",
-                answer: "단일 인덱스"
-            },
-            {
-                question: "두 개 이상의 컬럼으로 구성한 인덱스",
-                answer: "결합 인덱스(Concatenated Index)"
-            },
-            {
-                question: "기본 키(PK) 기준으로 레코드를 묶어서 저장하는 인덱스",
-                answer: "클러스터드 인덱스(Clutered Index)"
-            },
+            // {
+            //     question: "데이터가 정렬된 순서로 생성되는 인덱스",
+            //     answer: "순서 인덱스"
+            // },
+            // {
+            //     question: "해시 함수에 의해 직접 데이터에 키 값으로 접근하는 인덱스",
+            //     answer: "해시 인덱스"
+            // },
+            // {
+            //     question: "각 컬럼에 적은 개수 값이 저장된 경우 선택하는 인덱스",
+            //     answer: "비트맵 인덱스"
+            // },
+            // {
+            //     question: "수식이나 함수를 적용하여 만든 인덱스",
+            //     answer: "함수기반 인덱스"
+            // },
+            // {
+            //     question: "하나의 컬럼으로만 구성한 인덱스",
+            //     answer: "단일 인덱스"
+            // },
+            // {
+            //     question: "두 개 이상의 컬럼으로 구성한 인덱스",
+            //     answer: "결합 인덱스(Concatenated Index)"
+            // },
+            // {
+            //     question: "기본 키(PK) 기준으로 레코드를 묶어서 저장하는 인덱스",
+            //     answer: "클러스터드 인덱스(Clutered Index)"
+            // },
             {
                 question: "제거할 요소를 참조하는 다른 모든 개체를 함께 제거",
                 answer: "CASCADE"
@@ -553,7 +541,7 @@ const data = [
             },
             {
                 question: "응집도(Cohension) 순서",
-                answer: "기능적(Functional) > 순차적(Sequential) > 교환적(Communication) > 절차적(Procedural) > 시간적(Temporal) > 논리적(Logical) > 우연적(Coincidental)"
+                answer: "기능적(Functional) ＞ 순차적(Sequential) ＞ 교환적(Communication) ＞ 절차적(Procedural) ＞ 시간적(Temporal) ＞ 논리적(Logical) ＞ 우연적(Coincidental)"
             },
             {
                 question: "결합도(Coupling) 순서",
@@ -1347,90 +1335,90 @@ const data = [
         chapter: 12,
         title: "제품 소프트웨어 패키징",
         items: [
-            {
-                question: "소프트웨어 개발 과정에서 정리된 릴리즈 정보를 최종 사용자인 고객과 공유하기 위한 문서",
-                answer: "릴리즈 노트"
-            },
-            {
-                question: "저작권에 대한 사용 권한, 라이선스 발급, 암호화된 키 관리, 사용량에 따른 결제 관리 등을 수행하는 곳",
-                answer: "클리어링 하우스(Clearing House)"
-            },
-            {
-                question: "콘텐츠를 제공하는 저작권자",
-                answer: "콘텐츠 제공자(Contents Provider)"
-            },
-            {
-                question: "콘텐츠를 메타 데이터와 함께 배포 가능한 형태로 묶어 암호화하는 프로그램",
-                answer: "패키저(Packager)"
-            },
-            {
-                question: "암호화된 콘텐츠를 유통하는 곳이나 사람",
-                answer: "콘텐츠 분배자(Contents Distributor)"
-            },
-            {
-                question: "배포된 콘텐츠의 이용 권한을 통제하는 프로그램",
-                answer: "DRM 컨트롤러(DRM Controller)"
-            },
-            {
-                question: "콘텐츠 원본을 안전하게 유통하기 위한 전자적 보안 장치",
-                answer: "보안 컨테이너(Security Container)"
-            },
-            {
-                question: "콘텐츠 및 라이선스를 암호화하고 전자 서명을 할 수 있는 기술",
-                answer: "암호화(Encryption)"
-            },
-            {
-                question: "콘텐츠를 암호화한 키에 대한 저장 및 분배 기술",
-                answer: "키 관리(Key Management)"
-            },
-            {
-                question: "콘텐츠를 암호화된 콘텐츠로 생성하기 위한 기술",
-                answer: "암호화 파일 생성(Packager)"
-            },
-            {
-                question: "콘텐츠에 대한 식별 체계 표현 기술",
-                answer: "식별 기술(Identification)"
-            },
-            {
-                question: "라이선스의 내용 표현 기술",
-                answer: "저작권 표현(Right Expression)"
-            },
-            {
-                question: "라이선스 발급 및 사용에 대한 정책 표현 및 관리 기술",
-                answer: "정책 관리(Policy Management)"
-            },
-            {
-                question: "크랙에 의한 콘텐츠 사용 방지 기술",
-                answer: "크랙 방지(Tamper Resistance)"
-            },
-            {
-                question: "라이선스 발급 및 사용의 기준이 되는 사용자 인증 기술",
-                answer: "인증(Authentication)"
-            },
-            {
-                question: "개발 과정에서 소프트웨어의 변경 사항을 관리하기 위해 개발된 일련의 활동",
-                answer: "형상 관리(SCM; Software Configuration Management)"
-            },
-            {
-                question: "형상 관리 대상에 이름과 관리 번호를 부여하고, 계층(Tree) 구조로 구분하여 수정 및 추적이 용이하도록 하는 작업",
-                answer: "형상 식별"
-            },
-            {
-                question: "소프트웨어 업그레이드나 유지 보수 과정에서 생성된 다른 버전의 형상 항목을 관리하고, 이를 위해 특정 절차와 도구(Tool)를 결합시키는 작업",
-                answer: "버전 제어"
-            },
-            {
-                question: "식별된 형상 항목에 대한 변경 요구를 검토하여 현재의 기준선(Base Line)이 잘 반영될 수 있도록 조정하는 작업",
-                answer: "형상 통제"
-            },
-            {
-                question: "기준선의 무결성을 평가하기 위해 확인, 검증, 검열 과정을 통해 공식적으로 승인하는 작업",
-                answer: "형상 감사"
-            },
-            {
-                question: "형상의 식별, 통제, 감사 작업의 결과를 기록 및 관리하고 보고서를 작성하는 작업",
-                answer: "형상 기록"
-            },
+            // {
+            //     question: "소프트웨어 개발 과정에서 정리된 릴리즈 정보를 최종 사용자인 고객과 공유하기 위한 문서",
+            //     answer: "릴리즈 노트"
+            // },
+            // {
+            //     question: "저작권에 대한 사용 권한, 라이선스 발급, 암호화된 키 관리, 사용량에 따른 결제 관리 등을 수행하는 곳",
+            //     answer: "클리어링 하우스(Clearing House)"
+            // },
+            // {
+            //     question: "콘텐츠를 제공하는 저작권자",
+            //     answer: "콘텐츠 제공자(Contents Provider)"
+            // },
+            // {
+            //     question: "콘텐츠를 메타 데이터와 함께 배포 가능한 형태로 묶어 암호화하는 프로그램",
+            //     answer: "패키저(Packager)"
+            // },
+            // {
+            //     question: "암호화된 콘텐츠를 유통하는 곳이나 사람",
+            //     answer: "콘텐츠 분배자(Contents Distributor)"
+            // },
+            // {
+            //     question: "배포된 콘텐츠의 이용 권한을 통제하는 프로그램",
+            //     answer: "DRM 컨트롤러(DRM Controller)"
+            // },
+            // {
+            //     question: "콘텐츠 원본을 안전하게 유통하기 위한 전자적 보안 장치",
+            //     answer: "보안 컨테이너(Security Container)"
+            // },
+            // {
+            //     question: "콘텐츠 및 라이선스를 암호화하고 전자 서명을 할 수 있는 기술",
+            //     answer: "암호화(Encryption)"
+            // },
+            // {
+            //     question: "콘텐츠를 암호화한 키에 대한 저장 및 분배 기술",
+            //     answer: "키 관리(Key Management)"
+            // },
+            // {
+            //     question: "콘텐츠를 암호화된 콘텐츠로 생성하기 위한 기술",
+            //     answer: "암호화 파일 생성(Packager)"
+            // },
+            // {
+            //     question: "콘텐츠에 대한 식별 체계 표현 기술",
+            //     answer: "식별 기술(Identification)"
+            // },
+            // {
+            //     question: "라이선스의 내용 표현 기술",
+            //     answer: "저작권 표현(Right Expression)"
+            // },
+            // {
+            //     question: "라이선스 발급 및 사용에 대한 정책 표현 및 관리 기술",
+            //     answer: "정책 관리(Policy Management)"
+            // },
+            // {
+            //     question: "크랙에 의한 콘텐츠 사용 방지 기술",
+            //     answer: "크랙 방지(Tamper Resistance)"
+            // },
+            // {
+            //     question: "라이선스 발급 및 사용의 기준이 되는 사용자 인증 기술",
+            //     answer: "인증(Authentication)"
+            // },
+            // {
+            //     question: "개발 과정에서 소프트웨어의 변경 사항을 관리하기 위해 개발된 일련의 활동",
+            //     answer: "형상 관리(SCM; Software Configuration Management)"
+            // },
+            // {
+            //     question: "형상 관리 대상에 이름과 관리 번호를 부여하고, 계층(Tree) 구조로 구분하여 수정 및 추적이 용이하도록 하는 작업",
+            //     answer: "형상 식별"
+            // },
+            // {
+            //     question: "소프트웨어 업그레이드나 유지 보수 과정에서 생성된 다른 버전의 형상 항목을 관리하고, 이를 위해 특정 절차와 도구(Tool)를 결합시키는 작업",
+            //     answer: "버전 제어"
+            // },
+            // {
+            //     question: "식별된 형상 항목에 대한 변경 요구를 검토하여 현재의 기준선(Base Line)이 잘 반영될 수 있도록 조정하는 작업",
+            //     answer: "형상 통제"
+            // },
+            // {
+            //     question: "기준선의 무결성을 평가하기 위해 확인, 검증, 검열 과정을 통해 공식적으로 승인하는 작업",
+            //     answer: "형상 감사"
+            // },
+            // {
+            //     question: "형상의 식별, 통제, 감사 작업의 결과를 기록 및 관리하고 보고서를 작성하는 작업",
+            //     answer: "형상 기록"
+            // },
         ]
     },
 ]
