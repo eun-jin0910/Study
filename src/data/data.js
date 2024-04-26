@@ -4,18 +4,6 @@ const data = [
         title: "요구사항 확인",
         items: [
             {
-                question: "여러 번의 소프트웨어 개발 과정을 거쳐 점진적으로 완벽한 최종 소프트웨어를 개발하는 모형",
-                answer: "나선형 모형",
-            },
-            {
-                question: "요구사항 변화에 유연하게 대응할 수 있도록 일정한 주기를 반복하면서 개발하는 모형",
-                answer: "애자일 모형",
-            },
-            {
-                question: "각 단계를 확실히 매듭짓고 그 결과를 철저하게 검토하여 승인 과정을 거친 후에 다음 단계를 진행하는 개발 방법론",
-                answer: "폭포수 모형",
-            },
-            {
                 question: "요구사항에 유연하게 대응하기 위해 고객의 참여와 개발 과정의 반복을 극대화하여 개발 생산성을 향상시키는 방법",
                 answer: "XP(eXtreme Programming)",
             },
@@ -238,6 +226,10 @@ const data = [
         title: "데이터 입출력 구현",
         items: [
             {
+                question: "데이터 모델 절차",
+                answer: "요구사항 분석 -> 개념적 설계 -> 논리적 설계 -> 물리적 설계"
+            },
+            {
                 question: "행(Row)와 열(Column)로 구성된 테이블",
                 answer: "릴레이션(Relation)"
             },
@@ -266,6 +258,38 @@ const data = [
                 answer: "인스턴스(Instance)"
             },
             {
+                question: "SELECT 연산자",
+                answer: "δ(시그마)"
+            },
+            {
+                question: "PROJECT 연산자",
+                answer: "π(파이)"
+            },
+            {
+                question: "JOIN 연산자",
+                answer: "⋈(보타이)"
+            },
+            {
+                question: "DIVISION 연산자",
+                answer: "÷(나누기)"
+            },
+            {
+                question: "합집합 연산자",
+                answer: "∪"
+            },
+            {
+                question: "교집합 연산자",
+                answer: "∩"
+            },
+            {
+                question: "차집합 연산자",
+                answer: "-"
+            },
+            {
+                question: "교차곱(카티션 프로덕트) 연산자",
+                answer: "×"
+            },
+            {
                 question: "튜플 관계 해석과 도메인 관계 해석을 하는 비절차적 언어이다. 프레디킷 해석(Predicate Calculus)에 기반한 언어이며 비절차적 언어(원하는 정보가 무엇이라는 것만 선언)",
                 answer: "관계 해석(Relational Calculus)"
             },
@@ -283,15 +307,15 @@ const data = [
             },
             {
                 question: "릴레이션에서 기본 키가 복합 키일 경우 기본 키를 구성하는 속성 중 일부에게 종속된 경우",
-                answer: "부분 함수 종속"
+                answer: "부분 함수 종속(Partial Functional Dependency)"
             },
             {
                 question: "릴레이션에서 X→Y 관계가 있을 때, Y는 X의 전체 속성에 대해 종속하고, 부분 집합 속성에 종속하지 않는 경우",
-                answer: "완전 함수 종속"
+                answer: "완전 함수 종속(Full Functional Dependency)"
             },
             {
                 question: "릴레이션에서 X→Y, Y→Z 종속 관계가 있을 때, X→Z가 성립되는 경우",
-                answer: "이행 함수 종속"
+                answer: "이행 함수 종속(Transitive Functional Dependency)"
             },
             {
                 question: "한 엔터티에서 같은 기본 키(PK)를 가질 수 없거나, 기본 키(PK)의 속성이 NULL을 허용할 수 없는 제약 조건 ",
@@ -698,6 +722,10 @@ const data = [
                 answer: "Skipjack"
             },
             {
+                question: "임의의 길이의 입력 데이터나 메시지를 고정된 길이의 값이나 키로 변환하는 알고리즘으로, 복호화가 거의 불가능한 일방향 함수",
+                answer: "해시 암호화 알고리즘"
+            },
+            {
                 question: "각종 재해, 장애, 재난으로부터 위기관리를 기반으로 재해복구, 업무복구 및 재개, 비상계획 등을 통해 비즈니스 연속성을 보장하는 체계",
                 answer: "비즈니스 연속성 계획(BCP; Business Continuity Plan)"
             },
@@ -754,7 +782,7 @@ const data = [
                 answer: "PIMS(Personal Information Management System)"
             },
             {
-                question: "임시 키 무결성 프로토콜",
+                question: "WEP 방식을 보완한 IEEE 802.11i 표준의 임시 키 무결성 프로토콜 ",
                 answer: "TKIP(Temporal Key Integrity Protocol)"
             },
         ]
@@ -901,41 +929,29 @@ const data = [
         chapter: 11,
         title: "응용 SW 기초 기술 활용",
         items: [
-            {
-                question: "컴퓨터 시스템의 자원들을 효율적으로 관리하며, 사용자가 컴퓨터를 편리하고 효율적으로 사용할 수 있도록 환경을 제공하는 여러 프로그램의 모임",
-                answer: "운영체제(OS; Operating System)"
-            },
-            {
-                question: "1960년대 AT&T 벨(Bell) 연구소, MIT, General Electric이 공동 개발한 운영체제. 시분할 시스템을 위해 설계된 대화식 운영체제. 대부분 C 언어로 작성되어 있어 이식성이 높으며 장치, 프로세스 간의 호환성이 높다. 트리(Tree) 구조의 파일 시스템을 갖는다.",
-                answer: "UNIX"
-            },
-            {
-                question: "UNIX의 가장 핵심적인 부분으로 하드웨어를 보호하고, 프로그램과 하드웨어 간의 인터페이스 역할을 담당. 프로세스(CPU 스케줄링) 관리, 기억장치 관리, 파일 관리, 입출력 관리, 프로세스간 통신, 데이터 전송 및 변환 등 여러가지 기능을 수행",
-                answer: "커널(Kernel)"
-            },
-            {
-                question: "사용자의 명령어를 인식하여 프로그램을 호출하고 명령을 수행하는 명령어 해석기. 시스템과 사용자 간의 인터페이스를 담당",
-                answer: "쉘(Shell)"
-            },
-            {
-                question: "구글(Google) 사에서 개발한 리눅스 커널 기반의 개방형 모바일 운영체제. 자바와 코틀린으로 애플리케이션을 작성",
-                answer: "Android"
-            },
+            // {
+            //     question: "컴퓨터 시스템의 자원들을 효율적으로 관리하며, 사용자가 컴퓨터를 편리하고 효율적으로 사용할 수 있도록 환경을 제공하는 여러 프로그램의 모임",
+            //     answer: "운영체제(OS; Operating System)"
+            // },
+            // {
+            //     question: "1960년대 AT&T 벨(Bell) 연구소, MIT, General Electric이 공동 개발한 운영체제. 시분할 시스템을 위해 설계된 대화식 운영체제. 대부분 C 언어로 작성되어 있어 이식성이 높으며 장치, 프로세스 간의 호환성이 높다. 트리(Tree) 구조의 파일 시스템을 갖는다.",
+            //     answer: "UNIX"
+            // },
+            // {
+            //     question: "UNIX의 가장 핵심적인 부분으로 하드웨어를 보호하고, 프로그램과 하드웨어 간의 인터페이스 역할을 담당. 프로세스(CPU 스케줄링) 관리, 기억장치 관리, 파일 관리, 입출력 관리, 프로세스간 통신, 데이터 전송 및 변환 등 여러가지 기능을 수행",
+            //     answer: "커널(Kernel)"
+            // },
+            // {
+            //     question: "사용자의 명령어를 인식하여 프로그램을 호출하고 명령을 수행하는 명령어 해석기. 시스템과 사용자 간의 인터페이스를 담당",
+            //     answer: "쉘(Shell)"
+            // },
+            // {
+            //     question: "구글(Google) 사에서 개발한 리눅스 커널 기반의 개방형 모바일 운영체제. 자바와 코틀린으로 애플리케이션을 작성",
+            //     answer: "Android"
+            // },
             {
                 question: "프로그램이나 데이터를 주기억장치의 어디에 위치시킬 것인지를 결정하는 전략",
                 answer: "배치(Placement) 전략"
-            },
-            {
-                question: "프로그램이나 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 첫 번째 분할 영역에 배치시키는 방법",
-                answer: "최초 적합(First Fit)"
-            },
-            {
-                question: "프로그램이나 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 작게 남기는 분할 영역에 배치시키는 방법",
-                answer: "최적 적합(Best Fit)"
-            },
-            {
-                question: "프로그램이나 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 많이 남기는 분할 영역에 배치시키는 방법",
-                answer: "최악 적합(Worst Fit)"
             },
             {
                 question: "가상기억장치에 보관되어 있는 프로그램과 주기억 장치의 영역을 동일한 크기로 나눈 후 나눠진 프로그램을 동일하게 나눠진 주기억장치의 영역에 적재시켜 실행하는 기법",
@@ -994,107 +1010,111 @@ const data = [
                 answer: "HRN(Highest Response-ratio Next)"
             },
             {
-                question: "UNIX/LINUX 기본 명령어 중 파일 내용을 화면에 표시",
-                answer: "cat"
+                question: "인터넷을 통해 가상화된 컴퓨터 시스템 리소스를 제공하고, 정보를 자신의 컴퓨터가 아닌 클라우드에 연결된 다른 컴퓨터로 처리하는 기술",
+                answer: "클라우드 컴퓨팅(Cloud Computing)"
             },
             {
-                question: "UNIX/LINUX 기본 명령어 중 디렉터리의 위치를 변경",
-                answer: "cd"
+                question: "클라우드 컴퓨팅 유형 중 서버, 스토리지 같은 시스템 자원을 클라우드로 제공하는 서비스",
+                answer: "인프라형 서비스(IaaS; Infrastructure as a Service)"
             },
             {
-                question: "UNIX/LINUX 기본 명령어 중 파일 소유자와 그룹을 변경",
-                answer: "chown"
+                question: "클라우드 컴퓨팅 유형 중 프라를 생성, 관리 하는 복잡함 없이 애플리케이션을 개발, 실행, 관리할 수 있게 하는 플랫폼을 제공하는 서비스",
+                answer: "플랫폼형 서비스(PaaS; Platform as a Service)"
             },
             {
-                question: "UNIX/LINUX 기본 명령어 중 파일을 복사",
-                answer: "cp"
+                question: "클라우드 컴퓨팅 유형 중 소프트웨어 및 관련 데이터는 중앙에 호스팅되고 사용자는 웹 브라우저 등의 클라이언트를 통해 접속하여 소프트웨어를 서비스 형태로 이용하는 서비스",
+                answer: "소프트웨어형 서비스(SaaS; Software as a Service)"
             },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 파일을 삭제",
-                answer: "rm"
-            },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 파일을 찾음",
-                answer: "find"
-            },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 PID(프로세스 고유 번호)를 이용하여 프로세스를 종료",
-                answer: "kill"
-            },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 새로운 프로세스를 생성",
-                answer: "fork"
-            },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 현재 디렉터리의 파일 목록을 표시",
-                answer: "ls"
-            },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 디렉터리를 생성",
-                answer: "mkdir"
-            },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 디렉터리를 삭제",
-                answer: "rmdir"
-            },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 파일을 이동",
-                answer: "mv"
-            },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 현재 실행중인 프로세스를 표시",
-                answer: "ps"
-            },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 현재 작업중인 디렉터리 경로를 화면에 표시",
-                answer: "pwd"
-            },
-            {
-                question: "UNIX/LINUX 기본 명령어 중 현재 시스템에 접속해 있는 사용자를 표시",
-                answer: "who"
-            },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 파일 내용을 화면에 표시",
+            //     answer: "cat"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 디렉터리의 위치를 변경",
+            //     answer: "cd"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 파일 소유자와 그룹을 변경",
+            //     answer: "chown"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 파일을 복사",
+            //     answer: "cp"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 파일을 삭제",
+            //     answer: "rm"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 파일을 찾음",
+            //     answer: "find"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 PID(프로세스 고유 번호)를 이용하여 프로세스를 종료",
+            //     answer: "kill"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 새로운 프로세스를 생성",
+            //     answer: "fork"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 현재 디렉터리의 파일 목록을 표시",
+            //     answer: "ls"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 디렉터리를 생성",
+            //     answer: "mkdir"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 디렉터리를 삭제",
+            //     answer: "rmdir"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 파일을 이동",
+            //     answer: "mv"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 현재 실행중인 프로세스를 표시",
+            //     answer: "ps"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 현재 작업중인 디렉터리 경로를 화면에 표시",
+            //     answer: "pwd"
+            // },
+            // {
+            //     question: "UNIX/LINUX 기본 명령어 중 현재 시스템에 접속해 있는 사용자를 표시",
+            //     answer: "who"
+            // },
             {
                 question: "파일의 보호 모드를 설정하여 파일의 사용 허가를 지정하는 UNIX 명령어",
                 answer: "chmod"
             },
             {
-                question: "인터넷에 연결된 모든 컴퓨터 자원을 구분하기 위한 고유한 주소",
-                answer: "IP(Internet Protocol Address)"
-            },
-            {
-                question: "8비트씩 4부분, 총 32비트로 구성. 네트워크 부분의 길이에 따라 A 클래스에서 E 클래스까지 총 5단계로 구성",
-                answer: "IPv4(Internet Protocol version 4)"
-            },
-            {
-                question: "현재 사용하고 있는 IP 주소 체계인 IPv4의 주소 부족 문제를 해결하기 위해 개발. 16비트씩 8부분, 총 128비트로 구성. 각 부분을 16진수로 표현. 인증성, 기밀성, 데이터 무결성의 지원으로 보안 문제 해결",
-                answer: "IPv6(Internet Protocol version 6)"
-            },
-            {
-                question: "전송에 필요한 두 장치 간의 실제 접속과 절단 등 기계적, 전기적, 기능적, 절차적 특성에 대한 규칙을 정의",
+                question: "OSI 7계층 중 전송에 필요한 두 장치 간의 실제 접속과 절단 등 기계적, 전기적, 기능적, 절차적 특성에 대한 규칙을 정의",
                 answer: "물리 계층(Physical Layer)"
             },
             {
-                question: "두 개의 인접한 개방 시스템들 간에 신뢰성 있고 효율적인 정보 전송을 할 수 있도록 시스템 간 연결 설정과 유지 및 종료를 담당",
+                question: "OSI 7계층 중 두 개의 인접한 개방 시스템들 간에 신뢰성 있고 효율적인 정보 전송을 할 수 있도록 시스템 간 연결 설정과 유지 및 종료를 담당",
                 answer: "데이터 링크 계층(Data Link Layer)"
             },
             {
-                question: "개방 시스템들 간의 네트워크 연결을 관리하는 기능과 데이터의 교환 및 중계 기능",
+                question: "OSI 7계층 중 개방 시스템들 간의 네트워크 연결을 관리하는 기능과 데이터의 교환 및 중계 기능",
                 answer: "네트워크 계층(Network Layer)"
             },
             {
-                question: "논리적 안정과 균일한 데이터 전송 서비스를 제공함으로써 종단 시스템(End-to-End) 간에 투명한 데이터 전송을 가능하게 한다.",
+                question: "OSI 7계층 중 논리적 안정과 균일한 데이터 전송 서비스를 제공함으로써 종단 시스템(End-to-End) 간에 투명한 데이터 전송을 가능하게 한다.",
                 answer: "전송 계층(Transport Layer)"
             },
             {
-                question: "송수신 측 간의 관련성을 유지하고 대화 제어를 담당",
+                question: "OSI 7계층 중 송수신 측 간의 관련성을 유지하고 대화 제어를 담당",
                 answer: "세션 계층(Session Layer)"
             },
             {
-                question: "서로 다른 데이터 표현 형태를 갖는 시스템 간의 상호 접속을 위해 필요한 계층으로, 코드 변환, 데이터 암호화, 데이터 압축, 구문 검색 등의 기능 수행",
+                question: "OSI 7계층 중 서로 다른 데이터 표현 형태를 갖는 시스템 간의 상호 접속을 위해 필요한 계층으로, 코드 변환, 데이터 암호화, 데이터 압축, 구문 검색 등의 기능 수행",
                 answer: "표현 계층(Presentation Layer)"
             },
             {
-                question: "사용자(응용 프로그램)가 OSI 환경에 접근할 수 있도록 서비스를 제공",
+                question: "OSI 7계층 중 사용자(응용 프로그램)가 OSI 환경에 접근할 수 있도록 서비스를 제공",
                 answer: "응용 계층(Application Layer)"
             },
             {
@@ -1148,10 +1168,6 @@ const data = [
             {
                 question: "OSI 7계층 중 물리 계층 설명",
                 answer: "0과 1의 비트 정보를 회선에 보내기 위한 전기적 신호 변환. RS-232C"
-            },
-            {
-                question: "프로토콜은 서로 다른 시스템이나 기기들 간의 데이터 교환을 원활히 하기 위한 표준화된 통신규약. 기본 3요소에는 구문, 의미, 타이밍이 있다.",
-                answer: "프로토콜(Protocol)"
             },
             {
                 question: "점대점 방식이나 다중방식의 통신에 사용되는 ISO에서 표준화한 동기식 비트 중심의 데이터 링크 프로토콜",
@@ -1254,6 +1270,10 @@ const data = [
                 answer: "IPv4"
             },
             {
+                question: "현재 사용하고 있는 IP 주소 체계인 IPv4의 주소 부족 문제를 해결하기 위해 개발. 16비트씩 8부분, 총 128비트로 구성. 각 부분을 16진수로 표현. 인증성, 기밀성, 데이터 무결성의 지원으로 보안 문제 해결",
+                answer: "IPv6(Internet Protocol version 6)"
+            },
+            {
                 question: "IP 주소 고갈문제를 해결하기 위해 원본 네트워크를 여러 개의 네트워크로 분리하는 과정. 대표 네트워크 IP 주소일 경우 호스트 ID는 2진수 기준으로 모두 0을 채워넣고, 브로드캐스트 ID는 2진수 기준으로 모두 1을 채워넣음",
                 answer: "서브네팅(Subnetting)"
             },
@@ -1305,30 +1325,30 @@ const data = [
                 question: "하나의 대형 저장 장치 대신 다수의 저용량의 저장 장치를 배열로 구성하는 기술. 여러 개의 하드 디스크에 일부 중복된 데이터를 나눠서 저장하기 때문에 디스크 어레이라고도 한다.",
                 answer: "RAID(Redundant Array of Independent Disks)"
             },
-            {
-                question: "오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼. 더그 커팅과 마이크 캐퍼렐라가 개발했으며, 구글의 맵리듀스 엔진을 사용하고 있다. 일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성하고 그 안에 보관된 거대한 데이터 세트를 병렬로 처리할 수 있도록 개발된 자바 소프트웨어 프레임워크이다.",
-                answer: "하둡(Hadoop)"
-            },
-            {
-                question: "대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그래밍 모델이다. 흩어져 있는 데이터를 연관성 있는 데이터 분류로 묶는 Map 작업을 수행한 후 중복 데이터를 제거하고 원하는 데이터를 추출하는 Reduce 작업을 수행한다.",
-                answer: "맵리듀스(MapReduce)"
-            },
-            {
-                question: "대량의 데이터를 분석하여 데이터에 내재된 변수 사이의 상호관계를 규명하여 일정한 패턴을 찾아내는 기법",
-                answer: "데이터 마이닝(Data Mining)"
-            },
-            {
-                question: "오픈 소스 기반 분산 컴퓨팅 플랫폼인 아파치 하둡(Apache Hadoop) 기반의 분산 데이터 웨어하우스 프로젝트",
-                answer: "타조(Tajo)"
-            },
-            {
-                question: "다차원으로 이루어진 데이터로부터 통계적인 요약 정보를 분석하여 의사결정에 활용하는 방식. 연산 : Roll-up, Drill-down, Drill-through, Drillacross, Pivoting, Slicing, Dicing",
-                answer: "OLAP(Online Analytical Processing)"
-            },
-            {
-                question: "다양한 채널에서 소비자와 상호 작용을 통해 생성된 것으로, 기업 마케팅에 있어 효율적이고 다양한 데이터이며, 이전에 사용하지 않거나 알지 못했던 새로운 데이터나 기존 데이터에 새로운 가치가 더해진 데이터",
-                answer: "브로드 데이터(Broad Data)"
-            },
+            // {
+            //     question: "오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼. 더그 커팅과 마이크 캐퍼렐라가 개발했으며, 구글의 맵리듀스 엔진을 사용하고 있다. 일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성하고 그 안에 보관된 거대한 데이터 세트를 병렬로 처리할 수 있도록 개발된 자바 소프트웨어 프레임워크이다.",
+            //     answer: "하둡(Hadoop)"
+            // },
+            // {
+            //     question: "대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그래밍 모델이다. 흩어져 있는 데이터를 연관성 있는 데이터 분류로 묶는 Map 작업을 수행한 후 중복 데이터를 제거하고 원하는 데이터를 추출하는 Reduce 작업을 수행한다.",
+            //     answer: "맵리듀스(MapReduce)"
+            // },
+            // {
+            //     question: "대량의 데이터를 분석하여 데이터에 내재된 변수 사이의 상호관계를 규명하여 일정한 패턴을 찾아내는 기법",
+            //     answer: "데이터 마이닝(Data Mining)"
+            // },
+            // {
+            //     question: "오픈 소스 기반 분산 컴퓨팅 플랫폼인 아파치 하둡(Apache Hadoop) 기반의 분산 데이터 웨어하우스 프로젝트",
+            //     answer: "타조(Tajo)"
+            // },
+            // {
+            //     question: "다차원으로 이루어진 데이터로부터 통계적인 요약 정보를 분석하여 의사결정에 활용하는 방식. 연산 : Roll-up, Drill-down, Drill-through, Drillacross, Pivoting, Slicing, Dicing",
+            //     answer: "OLAP(Online Analytical Processing)"
+            // },
+            // {
+            //     question: "다양한 채널에서 소비자와 상호 작용을 통해 생성된 것으로, 기업 마케팅에 있어 효율적이고 다양한 데이터이며, 이전에 사용하지 않거나 알지 못했던 새로운 데이터나 기존 데이터에 새로운 가치가 더해진 데이터",
+            //     answer: "브로드 데이터(Broad Data)"
+            // },
         ]
     },
     {
